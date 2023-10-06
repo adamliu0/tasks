@@ -93,9 +93,8 @@ id,name,options,points,published
  */
 export function toCSV(questions: Question[]): string {
     return questions.reduce(
-        (a: string, q: Question): string =>
-            (a +=
-                "\n${q.id},${q.name},${q.options.length},${q.points},${q.published}"),
+        (ans: string, q: Question): string =>
+            (ans += `\n${q.id},${q.name},${q.options.length},${q.points},${q.published}`),
         "id,name,options,points,published"
     );
 }
