@@ -169,7 +169,27 @@ describe("Quizzer Tests", () => {
         expect(screen.queryByText("Simple_Questions")).not.toBeInTheDocument();
     });
 
-    test("Users can delete an existing quiz question", () => { });
+    test("Users can delete an existing quiz question", () => {
+        const text = screen.getByText("Simple_Questions");
+        text.click();
+
+        expect(
+            screen.queryByText("What is 2+2?", { exact: false })
+        ).toBeInTheDocument();
+
+        const editButton = screen.getByText("Edit");
+        editButton.click();
+
+        const deleteButton = screen.getAllByText("Delete")[0];
+        deleteButton.click();
+
+        const saveButton = screen.getByText("Save");
+        saveButton.click();
+
+        expect(
+            screen.queryByText("What is 2+2?", { exact: false })
+        ).not.toBeInTheDocument();
+    });
 
     test("Users can add a new quiz question", () => {
         const text = screen.getByText("Simple_Questions");
@@ -197,7 +217,24 @@ describe("Quizzer Tests", () => {
         ).toBeInTheDocument();
     });
 
-    test("Users can edit the questions and fields of a quiz", () => { });
+    test("Users can edit the questions and fields of a quiz", () => {
+        const text = screen.getByText("Simple_Questions");
+        text.click();
+        const editButton = screen.getByText("Edit");
+        editButton.click();
+
+        const questionTitle = screen.getAllByTestId("edit_question_title")[0];
+        userEvent.type(questionTitle, " test");
+
+        const saveButton = screen.getByText("Save");
+        saveButton.click();
+
+        expect(
+            screen.queryByText(QUIZZES[1].questionList[0].body + " test", {
+                exact: false
+            })
+        ).toBeInTheDocument();
+    });
 
     test("Users can reorder quiz questions", () => {
         const text = screen.getByText("Simple_Questions");
