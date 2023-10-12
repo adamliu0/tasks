@@ -5,63 +5,1849 @@
 Browserslist: caniuse-lite is outdated. Please run:
   npx browserslist@latest --update-db
   Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
-PASS src/nested.test.ts
-FAIL src/arrays.test.ts
-  ● Testing the array functions › Testing the removeDollars function
+FAIL src/quizzer/Quizzer.test.tsx
+  ● Console
 
-    expect(received).toEqual(expected) // deep equality
+    console.log
+      Example Description
 
-    - Expected  - 3
-    + Received  + 3
+      at saveChanges (src/quizzer/AddQuizModal.tsx:17:17)
 
-      Array [
-    -   1,
-    -   2,
-    -   3,
-    +   0,
-    +   0,
-    +   0,
-      ]
+    console.log
+      null
 
-      112 |
-      113 |     test("Testing the removeDollars function", () => {
-    > 114 |         expect(removeDollars(AMOUNTS_1)).toEqual([1, 2, 3]);
-          |                                          ^
-      115 |         expect(removeDollars(AMOUNTS_2)).toEqual([100, 200, 300, 400]);
-      116 |         expect(removeDollars(AMOUNTS_3)).toEqual([5]);
-      117 |         expect(removeDollars(AMOUNTS_4)).toEqual([0]);
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
 
-      at Object.<anonymous> (src/arrays.test.ts:114:42)
+    console.log
+      null
 
-FAIL src/objects.test.ts
-  ● Testing the object functions › Testing the renameQuestion function
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
 
-    expect(received).toEqual(expected) // deep equality
+    console.log
+      null
 
-    - Expected  - 1
-    + Received  + 1
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
 
-      Object {
-        "body": "What is 2+2?",
-        "expected": "4",
-        "id": 1,
-        "name": "My Addition Question",
-    -   "options": Array [],
-    +   "options": Object {},
-        "points": 1,
-        "published": true,
-        "type": "short_answer_question",
-      }
+    console.log
+      null
 
-      145 |         expect(
-      146 |             renameQuestion(ADDITION_QUESTION, "My Addition Question")
-    > 147 |         ).toEqual({
-          |           ^
-      148 |             id: 1,
-      149 |             name: "My Addition Question",
-      150 |             body: "What is 2+2?",
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
 
-      at Object.<anonymous> (src/objects.test.ts:147:11)
+    console.log
+      null
+
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
+
+    console.log
+      null
+
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
+
+    console.log
+      null
+
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
+
+    console.log
+      null
+
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
+
+    console.log
+      null
+
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
+
+    console.log
+      null
+
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
+
+    console.log
+      null
+
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
+
+    console.log
+      null
+
+      at handleClick (src/quizzer/QuizList.tsx:23:17)
+
+  ● Quizzer Tests › Users can enter or choose an answer for a quiz question, and be told if they are correct
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="select-option"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"quizzer"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"quiz_list"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quiz_card"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"d-flex justify-content-between align-items-center"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"d-flex align-items-baseline"[39m
+                [36m>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"title"[39m
+                  [36m>[39m
+                    [0mSimple_Questions[0m
+                  [36m</h1>[39m
+                  [36m<p>[39m
+                    [0m2[0m
+                    [0m question[0m
+                    [0ms[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"esc_button text-align-center btn btn-warning"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mEdit[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"esc_button text-align-center btn btn-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mExit[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"desc"[39m
+              [36m>[39m
+                [0mThis quiz is full of simple questions and is published[0m
+              [36m</p>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"question"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question_header"[39m
+                [36m>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m. [0m
+                    [0mWhat is 2+2?[0m
+                  [36m</h4>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m pt[0m
+                    [0m[0m
+                  [36m</h4>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"answer_box"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-control"[39m
+                      [33mid[39m=[32m"formShortAnswerBox"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"sub_check"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"hidden"[39m
+                    [36m>[39m
+                      [0m❌[0m
+                    [36m</h2>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"submit_btn btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSubmit[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"question"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question_header"[39m
+                [36m>[39m
+                  [36m<h4>[39m
+                    [0m2[0m
+                    [0m. [0m
+                    [0mWhich of these is a color?[0m
+                  [36m</h4>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m pt[0m
+                    [0m[0m
+                  [36m</h4>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"answer_box"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"red"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mred[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"apple"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mapple[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"firetruck"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mfiretruck[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"sub_check"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"hidden"[39m
+                    [36m>[39m
+                      [0m❌[0m
+                    [36m</h2>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"submit_btn btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSubmit[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"footer"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-danger"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mReset[0m
+                [36m</button>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"score_report"[39m
+                [36m>[39m
+                  [0m0[0m
+                  [0m/[0m
+                  [0m2[0m
+                [36m</span>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div />[39m
+          [36m<hr />[39m
+          [36m<h2[39m
+            [33mstyle[39m=[32m"color: white;"[39m
+          [36m>[39m
+            [0mApplication Sketch[0m
+          [36m</h2>[39m
+          [36m<img[39m
+            [33msrc[39m=[32m"task11sketch.png"[39m
+          [36m/>[39m
+          [36m<hr />[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"color: white;"[39m
+          [36m>[39m
+            [36m<h2>[39m
+              [0mCompleted Features[0m
+            [36m</h2>[39m
+            [36m<ul[39m
+              [33mclass[39m=[32m"completedList"[39m
+            [36m>[39m
+              [36m<li>[39m
+                [0mUsers can see a list of quizzes, including the quizzes title, description, and how many questions it has[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can select a specific quiz to see the questions, including the questions name, body, and points[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mQuiz questions can be of AT LEAST two types: a short answer question or multiple choice question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can enter or choose an answer for a quiz question, and be told if they are correct[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can see how many total points they have earned[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can clear out their existing answers for a quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can publish or unpublish a question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can filter the questions in a list so that only published questions are shown[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can edit the questions and fields of a quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can add a new quiz question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can delete an existing quiz question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can reorder quiz questions[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can add a new quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can delete an existing quiz[0m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      80 |             screen.queryByText("What is 2+2?", { exact: false })
+      81 |         ).toBeInTheDocument();
+    > 82 |         const selectOption = screen.getAllByTestId("select-option")[0];
+         |                                     ^
+      83 |         expect(screen.queryByText("✔️")).not.toBeInTheDocument();
+      84 |         userEvent.type(selectOption, "4");
+      85 |         const submitButton = screen.getAllByText("Submit")[0];
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:82:37)
+
+  ● Quizzer Tests › Users can clear out their existing answers for a quiz
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="select-option"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"quizzer"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"quiz_list"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quiz_card"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"d-flex justify-content-between align-items-center"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"d-flex align-items-baseline"[39m
+                [36m>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"title"[39m
+                  [36m>[39m
+                    [0mSimple_Questions[0m
+                  [36m</h1>[39m
+                  [36m<p>[39m
+                    [0m2[0m
+                    [0m question[0m
+                    [0ms[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"esc_button text-align-center btn btn-warning"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mEdit[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"esc_button text-align-center btn btn-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mExit[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"desc"[39m
+              [36m>[39m
+                [0mThis quiz is full of simple questions and is published[0m
+              [36m</p>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"question"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question_header"[39m
+                [36m>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m. [0m
+                    [0mWhat is 2+2?[0m
+                  [36m</h4>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m pt[0m
+                    [0m[0m
+                  [36m</h4>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"answer_box"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-control"[39m
+                      [33mid[39m=[32m"formShortAnswerBox"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"sub_check"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"hidden"[39m
+                    [36m>[39m
+                      [0m❌[0m
+                    [36m</h2>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"submit_btn btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSubmit[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"question"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question_header"[39m
+                [36m>[39m
+                  [36m<h4>[39m
+                    [0m2[0m
+                    [0m. [0m
+                    [0mWhich of these is a color?[0m
+                  [36m</h4>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m pt[0m
+                    [0m[0m
+                  [36m</h4>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"answer_box"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"red"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mred[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"apple"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mapple[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"firetruck"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mfiretruck[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"sub_check"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"hidden"[39m
+                    [36m>[39m
+                      [0m❌[0m
+                    [36m</h2>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"submit_btn btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSubmit[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"footer"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-danger"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mReset[0m
+                [36m</button>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"score_report"[39m
+                [36m>[39m
+                  [0m0[0m
+                  [0m/[0m
+                  [0m2[0m
+                [36m</span>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div />[39m
+          [36m<hr />[39m
+          [36m<h2[39m
+            [33mstyle[39m=[32m"color: white;"[39m
+          [36m>[39m
+            [0mApplication Sketch[0m
+          [36m</h2>[39m
+          [36m<img[39m
+            [33msrc[39m=[32m"task11sketch.png"[39m
+          [36m/>[39m
+          [36m<hr />[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"color: white;"[39m
+          [36m>[39m
+            [36m<h2>[39m
+              [0mCompleted Features[0m
+            [36m</h2>[39m
+            [36m<ul[39m
+              [33mclass[39m=[32m"completedList"[39m
+            [36m>[39m
+              [36m<li>[39m
+                [0mUsers can see a list of quizzes, including the quizzes title, description, and how many questions it has[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can select a specific quiz to see the questions, including the questions name, body, and points[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mQuiz questions can be of AT LEAST two types: a short answer question or multiple choice question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can enter or choose an answer for a quiz question, and be told if they are correct[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can see how many total points they have earned[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can clear out their existing answers for a quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can publish or unpublish a question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can filter the questions in a list so that only published questions are shown[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can edit the questions and fields of a quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can add a new quiz question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can delete an existing quiz question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can reorder quiz questions[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can add a new quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can delete an existing quiz[0m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      101 |             screen.queryByText("What is 2+2?", { exact: false })
+      102 |         ).toBeInTheDocument();
+    > 103 |         const selectOption = screen.getAllByTestId("select-option")[0];
+          |                                     ^
+      104 |         expect(screen.queryByText("✔️")).not.toBeInTheDocument();
+      105 |
+      106 |         userEvent.type(selectOption, "4");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:103:37)
+
+  ● Quizzer Tests › Users can publish or unpublish a question
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="question_published_check"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"quizzer"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"quiz_list"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quiz_card"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"edit_header"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"title_published_flex"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_area"[39m
+                      [36m>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label"[39m
+                          [33mfor[39m=[32m"formEditQuizId"[39m
+                        [36m>[39m
+                          [0mTitle: [0m
+                        [36m</label>[39m
+                        [36m<input[39m
+                          [33mclass[39m=[32m"form-control"[39m
+                          [33mid[39m=[32m"formEditQuizId"[39m
+                          [33mvalue[39m=[32m"Simple_Questions"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"published_check form-check"[39m
+                      [36m>[39m
+                        [36m<input[39m
+                          [33mchecked[39m=[32m""[39m
+                          [33mclass[39m=[32m"form-check-input"[39m
+                          [33mid[39m=[32m"is-published_check"[39m
+                          [33mtype[39m=[32m"checkbox"[39m
+                        [36m/>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-check-label"[39m
+                          [33mfor[39m=[32m"is-published_check"[39m
+                          [33mtitle[39m=[32m""[39m
+                        [36m>[39m
+                          [0mQuiz Published[0m
+                        [36m</label>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-label"[39m
+                      [33mfor[39m=[32m"formEditQuizId"[39m
+                    [36m>[39m
+                      [0mDescription: [0m
+                    [36m</label>[39m
+                    [36m<textarea[39m
+                      [33mclass[39m=[32m"form-control"[39m
+                      [33mid[39m=[32m"formEditQuizId"[39m
+                      [33mrows[39m=[32m"3"[39m
+                    [36m>[39m
+                      [0mThis quiz is full of simple questions and is published[0m
+                    [36m</textarea>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<hr />[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"edit_question"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"edit_title_row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<h4>[39m
+                          [0m1[0m
+                          [0m. [0m
+                        [36m</h4>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"title_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editTitleFormId"[39m
+                            [33mvalue[39m=[32m"What is 2+2?"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"points_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editPointsFormId"[39m
+                            [33mtype[39m=[32m"number"[39m
+                            [33mvalue[39m=[32m"1"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<h4>[39m
+                          [0mpt[0m
+                          [0m[0m
+                        [36m</h4>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"center_section"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_answer_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"type_form"[39m
+                        [36m>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [0mType: [0m
+                            [36m</label>[39m
+                            [36m<select[39m
+                              [33mclass[39m=[32m"type_dropdown form-select"[39m
+                              [33mid[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"multiple_choice_question"[39m
+                              [36m>[39m
+                                [0mMultiple Choice[0m
+                              [36m</option>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"short_answer_question"[39m
+                              [36m>[39m
+                                [0mShort Answer[0m
+                              [36m</option>[39m
+                            [36m</select>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"formEditShortExpectedBox"[39m
+                            [36m>[39m
+                              [0mAnswer:[0m
+                            [36m</label>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"form-control"[39m
+                              [33mid[39m=[32m"formEditShortExpectedBox"[39m
+                              [33mvalue[39m=[32m"4"[39m
+                            [36m/>[39m
+                          [36m</div>[39m
+                   ...
+
+      122 |         editButton.click();
+      123 |
+    > 124 |         const publishedCheck = screen.getAllByTestId(
+          |                                       ^
+      125 |             "question_published_check"
+      126 |         )[3];
+      127 |         publishedCheck.click();
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:124:39)
+
+  ● Quizzer Tests › Users can filter the questions in a list so that only published questions are shown
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Quiz Published"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"quizzer"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"quiz_list"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quiz_card"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"edit_header"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"title_published_flex"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_area"[39m
+                      [36m>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label"[39m
+                          [33mfor[39m=[32m"formEditQuizId"[39m
+                        [36m>[39m
+                          [0mTitle: [0m
+                        [36m</label>[39m
+                        [36m<input[39m
+                          [33mclass[39m=[32m"form-control"[39m
+                          [33mid[39m=[32m"formEditQuizId"[39m
+                          [33mvalue[39m=[32m"Simple_Questions"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"published_check form-check"[39m
+                      [36m>[39m
+                        [36m<input[39m
+                          [33mchecked[39m=[32m""[39m
+                          [33mclass[39m=[32m"form-check-input"[39m
+                          [33mid[39m=[32m"is-published_check"[39m
+                          [33mtype[39m=[32m"checkbox"[39m
+                        [36m/>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-check-label"[39m
+                          [33mfor[39m=[32m"is-published_check"[39m
+                          [33mtitle[39m=[32m""[39m
+                        [36m>[39m
+                          [0mQuiz Published[0m
+                        [36m</label>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-label"[39m
+                      [33mfor[39m=[32m"formEditQuizId"[39m
+                    [36m>[39m
+                      [0mDescription: [0m
+                    [36m</label>[39m
+                    [36m<textarea[39m
+                      [33mclass[39m=[32m"form-control"[39m
+                      [33mid[39m=[32m"formEditQuizId"[39m
+                      [33mrows[39m=[32m"3"[39m
+                    [36m>[39m
+                      [0mThis quiz is full of simple questions and is published[0m
+                    [36m</textarea>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<hr />[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"edit_question"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"edit_title_row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<h4>[39m
+                          [0m1[0m
+                          [0m. [0m
+                        [36m</h4>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"title_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editTitleFormId"[39m
+                            [33mvalue[39m=[32m"What is 2+2?"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"points_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editPointsFormId"[39m
+                            [33mtype[39m=[32m"number"[39m
+                            [33mvalue[39m=[32m"1"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<h4>[39m
+                          [0mpt[0m
+                          [0m[0m
+                        [36m</h4>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"center_section"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_answer_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"type_form"[39m
+                        [36m>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [0mType: [0m
+                            [36m</label>[39m
+                            [36m<select[39m
+                              [33mclass[39m=[32m"type_dropdown form-select"[39m
+                              [33mid[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"multiple_choice_question"[39m
+                              [36m>[39m
+                                [0mMultiple Choice[0m
+                              [36m</option>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"short_answer_question"[39m
+                              [36m>[39m
+                                [0mShort Answer[0m
+                              [36m</option>[39m
+                            [36m</select>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"formEditShortExpectedBox"[39m
+                            [36m>[39m
+                              [0mAnswer:[0m
+                            [36m</label>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"form-control"[39m
+                              [33mid[39m=[32m"formEditShortExpectedBox"[39m
+                              [33mvalue[39m=[32m"4"[39m
+                            [36m/>[39m
+                          [36m</div>[39m
+                   ...
+
+      144 |         editButton.click();
+      145 |
+    > 146 |         const quizPublished = screen.getByTestId("Quiz Published");
+          |                                      ^
+      147 |         quizPublished.click();
+      148 |         expect(quizPublished).not.toBeChecked();
+      149 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:146:38)
+
+  ● Quizzer Tests › Users can add a new quiz question
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="Quiz Published"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"quizzer"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"quiz_list"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quiz_card"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"edit_header"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"title_published_flex"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_area"[39m
+                      [36m>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label"[39m
+                          [33mfor[39m=[32m"formEditQuizId"[39m
+                        [36m>[39m
+                          [0mTitle: [0m
+                        [36m</label>[39m
+                        [36m<input[39m
+                          [33mclass[39m=[32m"form-control"[39m
+                          [33mid[39m=[32m"formEditQuizId"[39m
+                          [33mvalue[39m=[32m"Simple_Questions"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"published_check form-check"[39m
+                      [36m>[39m
+                        [36m<input[39m
+                          [33mchecked[39m=[32m""[39m
+                          [33mclass[39m=[32m"form-check-input"[39m
+                          [33mid[39m=[32m"is-published_check"[39m
+                          [33mtype[39m=[32m"checkbox"[39m
+                        [36m/>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-check-label"[39m
+                          [33mfor[39m=[32m"is-published_check"[39m
+                          [33mtitle[39m=[32m""[39m
+                        [36m>[39m
+                          [0mQuiz Published[0m
+                        [36m</label>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-label"[39m
+                      [33mfor[39m=[32m"formEditQuizId"[39m
+                    [36m>[39m
+                      [0mDescription: [0m
+                    [36m</label>[39m
+                    [36m<textarea[39m
+                      [33mclass[39m=[32m"form-control"[39m
+                      [33mid[39m=[32m"formEditQuizId"[39m
+                      [33mrows[39m=[32m"3"[39m
+                    [36m>[39m
+                      [0mThis quiz is full of simple questions and is published[0m
+                    [36m</textarea>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<hr />[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"edit_question"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"edit_title_row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<h4>[39m
+                          [0m1[0m
+                          [0m. [0m
+                        [36m</h4>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"title_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editTitleFormId"[39m
+                            [33mvalue[39m=[32m"What is 2+2?"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"points_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editPointsFormId"[39m
+                            [33mtype[39m=[32m"number"[39m
+                            [33mvalue[39m=[32m"1"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<h4>[39m
+                          [0mpt[0m
+                          [0m[0m
+                        [36m</h4>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"center_section"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_answer_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"type_form"[39m
+                        [36m>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [0mType: [0m
+                            [36m</label>[39m
+                            [36m<select[39m
+                              [33mclass[39m=[32m"type_dropdown form-select"[39m
+                              [33mid[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"multiple_choice_question"[39m
+                              [36m>[39m
+                                [0mMultiple Choice[0m
+                              [36m</option>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"short_answer_question"[39m
+                              [36m>[39m
+                                [0mShort Answer[0m
+                              [36m</option>[39m
+                            [36m</select>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"formEditShortExpectedBox"[39m
+                            [36m>[39m
+                              [0mAnswer:[0m
+                            [36m</label>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"form-control"[39m
+                              [33mid[39m=[32m"formEditShortExpectedBox"[39m
+                              [33mvalue[39m=[32m"4"[39m
+                            [36m/>[39m
+                          [36m</div>[39m
+                   ...
+
+      206 |         addButton.click();
+      207 |
+    > 208 |         const quizPublished = screen.getByTestId("Quiz Published");
+          |                                      ^
+      209 |         quizPublished.click();
+      210 |         expect(quizPublished).not.toBeChecked();
+      211 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
+      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:208:38)
+
+  ● Quizzer Tests › Users can edit the questions and fields of a quiz
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="edit_question_title"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"quizzer"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"quiz_list"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quiz_card"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"edit_header"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"title_published_flex"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_area"[39m
+                      [36m>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label"[39m
+                          [33mfor[39m=[32m"formEditQuizId"[39m
+                        [36m>[39m
+                          [0mTitle: [0m
+                        [36m</label>[39m
+                        [36m<input[39m
+                          [33mclass[39m=[32m"form-control"[39m
+                          [33mid[39m=[32m"formEditQuizId"[39m
+                          [33mvalue[39m=[32m"Simple_Questions"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"published_check form-check"[39m
+                      [36m>[39m
+                        [36m<input[39m
+                          [33mchecked[39m=[32m""[39m
+                          [33mclass[39m=[32m"form-check-input"[39m
+                          [33mid[39m=[32m"is-published_check"[39m
+                          [33mtype[39m=[32m"checkbox"[39m
+                        [36m/>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-check-label"[39m
+                          [33mfor[39m=[32m"is-published_check"[39m
+                          [33mtitle[39m=[32m""[39m
+                        [36m>[39m
+                          [0mQuiz Published[0m
+                        [36m</label>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-label"[39m
+                      [33mfor[39m=[32m"formEditQuizId"[39m
+                    [36m>[39m
+                      [0mDescription: [0m
+                    [36m</label>[39m
+                    [36m<textarea[39m
+                      [33mclass[39m=[32m"form-control"[39m
+                      [33mid[39m=[32m"formEditQuizId"[39m
+                      [33mrows[39m=[32m"3"[39m
+                    [36m>[39m
+                      [0mThis quiz is full of simple questions and is published[0m
+                    [36m</textarea>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<hr />[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"edit_question"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"edit_title_row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<h4>[39m
+                          [0m1[0m
+                          [0m. [0m
+                        [36m</h4>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"title_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editTitleFormId"[39m
+                            [33mvalue[39m=[32m"What is 2+2?"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"points_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editPointsFormId"[39m
+                            [33mtype[39m=[32m"number"[39m
+                            [33mvalue[39m=[32m"1"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<h4>[39m
+                          [0mpt[0m
+                          [0m[0m
+                        [36m</h4>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"center_section"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_answer_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"type_form"[39m
+                        [36m>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [0mType: [0m
+                            [36m</label>[39m
+                            [36m<select[39m
+                              [33mclass[39m=[32m"type_dropdown form-select"[39m
+                              [33mid[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"multiple_choice_question"[39m
+                              [36m>[39m
+                                [0mMultiple Choice[0m
+                              [36m</option>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"short_answer_question"[39m
+                              [36m>[39m
+                                [0mShort Answer[0m
+                              [36m</option>[39m
+                            [36m</select>[39m
+                          [36m</div>[39m
+                        [36m</div>[39m
+                        [36m<div>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"formEditShortExpectedBox"[39m
+                            [36m>[39m
+                              [0mAnswer:[0m
+                            [36m</label>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"form-control"[39m
+                              [33mid[39m=[32m"formEditShortExpectedBox"[39m
+                              [33mvalue[39m=[32m"4"[39m
+                            [36m/>[39m
+                          [36m</div>[39m
+                   ...
+
+      224 |         editButton.click();
+      225 |
+    > 226 |         const questionTitle = screen.getAllByTestId("edit_question_title")[0];
+          |                                      ^
+      227 |         userEvent.type(questionTitle, " test");
+      228 |
+      229 |         const saveButton = screen.getByText("Save");
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:226:38)
+
+  ● Quizzer Tests › Users can reorder quiz questions
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="question_body"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"quizzer"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"quiz_list"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quiz_card"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"d-flex justify-content-between align-items-center"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"d-flex align-items-baseline"[39m
+                [36m>[39m
+                  [36m<h1[39m
+                    [33mclass[39m=[32m"title"[39m
+                  [36m>[39m
+                    [0mSimple_Questions[0m
+                  [36m</h1>[39m
+                  [36m<p>[39m
+                    [0m2[0m
+                    [0m question[0m
+                    [0ms[0m
+                  [36m</p>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"esc_button text-align-center btn btn-warning"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mEdit[0m
+                  [36m</button>[39m
+                  [36m<button[39m
+                    [33mclass[39m=[32m"esc_button text-align-center btn btn-danger"[39m
+                    [33mtype[39m=[32m"button"[39m
+                  [36m>[39m
+                    [0mExit[0m
+                  [36m</button>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"desc"[39m
+              [36m>[39m
+                [0mThis quiz is full of simple questions and is published[0m
+              [36m</p>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"question"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question_header"[39m
+                [36m>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m. [0m
+                    [0mWhat is 2+2?[0m
+                  [36m</h4>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m pt[0m
+                    [0m[0m
+                  [36m</h4>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"answer_box"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"form-control"[39m
+                      [33mid[39m=[32m"formShortAnswerBox"[39m
+                      [33mvalue[39m=[32m""[39m
+                    [36m/>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"sub_check"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"hidden"[39m
+                    [36m>[39m
+                      [0m❌[0m
+                    [36m</h2>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"submit_btn btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSubmit[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"question"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"question_header"[39m
+                [36m>[39m
+                  [36m<h4>[39m
+                    [0m2[0m
+                    [0m. [0m
+                    [0mWhich of these is a color?[0m
+                  [36m</h4>[39m
+                  [36m<h4>[39m
+                    [0m1[0m
+                    [0m pt[0m
+                    [0m[0m
+                  [36m</h4>[39m
+                [36m</div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"answer_box"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"red"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mred[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"apple"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mapple[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"form-check"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"form-check-input"[39m
+                        [33mname[39m=[32m"questionChoice1"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"firetruck"[39m
+                      [36m/>[39m
+                      [36m<label[39m
+                        [33mclass[39m=[32m"form-check-label"[39m
+                        [33mtitle[39m=[32m""[39m
+                      [36m>[39m
+                        [0mfiretruck[0m
+                      [36m</label>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"sub_check"[39m
+                  [36m>[39m
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"hidden"[39m
+                    [36m>[39m
+                      [0m❌[0m
+                    [36m</h2>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"submit_btn btn btn-primary"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mSubmit[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"footer"[39m
+              [36m>[39m
+                [36m<button[39m
+                  [33mclass[39m=[32m"btn btn-danger"[39m
+                  [33mtype[39m=[32m"button"[39m
+                [36m>[39m
+                  [0mReset[0m
+                [36m</button>[39m
+                [36m<span[39m
+                  [33mclass[39m=[32m"score_report"[39m
+                [36m>[39m
+                  [0m0[0m
+                  [0m/[0m
+                  [0m2[0m
+                [36m</span>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<div />[39m
+          [36m<hr />[39m
+          [36m<h2[39m
+            [33mstyle[39m=[32m"color: white;"[39m
+          [36m>[39m
+            [0mApplication Sketch[0m
+          [36m</h2>[39m
+          [36m<img[39m
+            [33msrc[39m=[32m"task11sketch.png"[39m
+          [36m/>[39m
+          [36m<hr />[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"color: white;"[39m
+          [36m>[39m
+            [36m<h2>[39m
+              [0mCompleted Features[0m
+            [36m</h2>[39m
+            [36m<ul[39m
+              [33mclass[39m=[32m"completedList"[39m
+            [36m>[39m
+              [36m<li>[39m
+                [0mUsers can see a list of quizzes, including the quizzes title, description, and how many questions it has[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can select a specific quiz to see the questions, including the questions name, body, and points[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mQuiz questions can be of AT LEAST two types: a short answer question or multiple choice question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can enter or choose an answer for a quiz question, and be told if they are correct[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can see how many total points they have earned[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can clear out their existing answers for a quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can publish or unpublish a question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can filter the questions in a list so that only published questions are shown[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can edit the questions and fields of a quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can add a new quiz question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can delete an existing quiz question[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can reorder quiz questions[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can add a new quiz[0m
+              [36m</li>[39m
+              [36m<li>[39m
+                [0mUsers can delete an existing quiz[0m
+              [36m</li>[39m
+            [36m</ul>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      241 |         text.click();
+      242 |
+    > 243 |         const intialOrder = screen.getAllByTestId("question_body");
+          |                                    ^
+      244 |         expect(intialOrder[0]).toHaveTextContent("What is 2+2?");
+      245 |         expect(intialOrder[1]).toHaveTextContent("Which of these is a color?");
+      246 |
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:243:36)
+
+  ● Quizzer Tests › Quiz questions can be of AT LEAST two types: a short answer question or multiple choice question 
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="question_type_dropdown_0"]
+
+    Ignored nodes: comments, <script />, <style />
+    [36m<body[39m
+      [33mclass[39m=[32m""[39m
+      [33mstyle[39m=[32m"padding-right: 1024px;"[39m
+    [36m>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"quizzer"[39m
+        [36m>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"quiz_list"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"quiz_card"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"edit_header"[39m
+                [36m>[39m
+                  [36m<div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"title_published_flex"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_area"[39m
+                      [36m>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-label"[39m
+                          [33mfor[39m=[32m"formEditQuizId"[39m
+                        [36m>[39m
+                          [0mTitle: [0m
+                        [36m</label>[39m
+                        [36m<input[39m
+                          [33mclass[39m=[32m"form-control"[39m
+                          [33mid[39m=[32m"formEditQuizId"[39m
+                          [33mvalue[39m=[32m"Simple_Questions"[39m
+                        [36m/>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"published_check form-check"[39m
+                      [36m>[39m
+                        [36m<input[39m
+                          [33mchecked[39m=[32m""[39m
+                          [33mclass[39m=[32m"form-check-input"[39m
+                          [33mid[39m=[32m"is-published_check"[39m
+                          [33mtype[39m=[32m"checkbox"[39m
+                        [36m/>[39m
+                        [36m<label[39m
+                          [33mclass[39m=[32m"form-check-label"[39m
+                          [33mfor[39m=[32m"is-published_check"[39m
+                          [33mtitle[39m=[32m""[39m
+                        [36m>[39m
+                          [0mQuiz Published[0m
+                        [36m</label>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"form-label"[39m
+                      [33mfor[39m=[32m"formEditQuizId"[39m
+                    [36m>[39m
+                      [0mDescription: [0m
+                    [36m</label>[39m
+                    [36m<textarea[39m
+                      [33mclass[39m=[32m"form-control"[39m
+                      [33mid[39m=[32m"formEditQuizId"[39m
+                      [33mrows[39m=[32m"3"[39m
+                    [36m>[39m
+                      [0mThis quiz is full of simple questions and is published[0m
+                    [36m</textarea>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<hr />[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"edit_question"[39m
+                  [36m>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"edit_title_row"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<h4>[39m
+                          [0m1[0m
+                          [0m. [0m
+                        [36m</h4>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"title_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editTitleFormId"[39m
+                            [33mvalue[39m=[32m"What is 2+2?"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                      [36m</div>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_title_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"points_input"[39m
+                        [36m>[39m
+                          [36m<input[39m
+                            [33mclass[39m=[32m"form-control"[39m
+                            [33mid[39m=[32m"editPointsFormId"[39m
+                            [33mtype[39m=[32m"number"[39m
+                            [33mvalue[39m=[32m"1"[39m
+                          [36m/>[39m
+                        [36m</div>[39m
+                        [36m<h4>[39m
+                          [0mpt[0m
+                          [0m[0m
+                        [36m</h4>[39m
+                      [36m</div>[39m
+                    [36m</div>[39m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"center_section"[39m
+                    [36m>[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"edit_answer_box"[39m
+                      [36m>[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"type_form"[39m
+                        [36m>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [0mType: [0m
+                            [36m</label>[39m
+                            [36m<select[39m
+                              [33mclass[39m=[32m"type_dropdown form-select"[39m
+                              [33mid[39m=[32m"questionTypeFormId"[39m
+                            [36m>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"multiple_choice_question"[39m
+                              [36m>[39m
+                                [0mMultiple Choice[0m
+                              [36m</option>[39m
+                              [36m<option[39m
+                                [33mvalue[39m=[32m"short_answer_question"[39m
+                              [36m>[39m
+                                [0mShort Answer[0m
+                              [36m</option>[39m
+                            [36m</select>[39m
+                          [36m</div>[39m
+                          [36m<div>[39m
+                            [36m<label[39m
+                              [33mclass[39m=[32m"form-label"[39m
+                              [33mfor[39m=[32m"editNumChoicesId"[39m
+                            [36m>[39m
+                              [0mChoices: [0m
+                            [36m</label>[39m
+                            [36m<input[39m
+                              [33mclass[39m=[32m"num_choices form-control"[39m
+                              [33mid[39m=[32m"editNumChoicesId"[39m
+                              [33mtype[39m=[32m"number"[39m
+                              [33mvalue[39m=[32m"3"[39m
+                            [36m/>[39m
+                          [36m</div>[39m
+                        [36m</div...
+
+      270 |         const dropdown = screen.getAllByLabelText("Type:")[0];
+      271 |         userEvent.selectOptions(dropdown, "multiple_choice_question");
+    > 272 |         const options: HTMLOptionElement[] = screen.getAllByTestId(
+          |                                                     ^
+      273 |             "question_type_dropdown_0"
+      274 |         );
+      275 |         expect(options[0].selected).toBeTruthy();
+
+      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/quizzer/Quizzer.test.tsx:272:53)
 
 PASS src/components/StartAttempt.test.tsx
 FAIL src/components/TwoDice.test.tsx
@@ -432,732 +2218,6 @@ FAIL src/components/TwoDice.test.tsx
 PASS src/form-components/MultipleChoiceQuestion.test.tsx
 PASS src/bad-components/ChooseTeam.test.tsx
 PASS src/bad-components/DoubleHalf.test.tsx
-FAIL src/HtmlCss.test.tsx
-  ● Some HTML Elements are added. › There is a header
-
-    TestingLibraryElementError: Found multiple elements with the role "heading"
-
-    Here are the matching elements:
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h1>[39m
-      [0mThis is a header[0m
-    [36m</h1>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mCheck Answer[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mGive Attempts[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mEdit Mode[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mChange Color[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mMultiple Choice Question[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mDouble Half[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mChoose Team[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mColored Box[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mShove Box[0m
-    [36m</h3>[39m
-
-    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"App"[39m
-        [36m>[39m
-          [36m<header[39m
-            [33mclass[39m=[32m"App-header"[39m
-          [36m>[39m
-            [0mAdam Liu UD CISC275 with React Hooks and TypeScript[0m
-          [36m</header>[39m
-          [36m<h1>[39m
-            [0mThis is a header[0m
-          [36m</h1>[39m
-          [36m<p>[39m
-            [0mHello World[0m
-          [36m</p>[39m
-          [36m<img[39m
-            [33malt[39m=[32m"This is an image of doraemon"[39m
-            [33msrc[39m=[32m"../assets/images/doraemon1.jpg"[39m
-          [36m/>[39m
-          [36m<ol>[39m
-            [36m<li>[39m
-              [0mThing 1[0m
-            [36m</li>[39m
-            [36m<li>[39m
-              [0mThing 2[0m
-            [36m</li>[39m
-            [36m<li>[39m
-              [0mThing 3[0m
-            [36m</li>[39m
-          [36m</ol>[39m
-          [36m<button[39m
-            [33mclass[39m=[32m"btn btn-primary"[39m
-            [33mtype[39m=[32m"button"[39m
-          [36m>[39m
-            [0mLog Hello World[0m
-          [36m</button>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
-          [36m<div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"container"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"row"[39m
-              [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mFirst Column[0m
-                  [36m<div[39m
-                    [33mstyle[39m=[32m"width: 50px; height: 30px; background-color: red;"[39m
-                  [36m/>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"col"[39m
-                [36m>[39m
-                  [0mSecond Column[0m
-                  [36m<div[39m
-                    [33mstyle[39m=[32m"width: 50px; height: 30px; background-color: red;"[39m
-                  [36m/>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mCheck Answer[0m
-            [36m</h3>[39m
-            [36m<div>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-label"[39m
-                [33mfor[39m=[32m"formCheckAnswer"[39m
-              [36m>[39m
-                [0mWhat is the Answer? (Hint: 42)[0m
-              [36m</label>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-control"[39m
-                [33mid[39m=[32m"formCheckAnswer"[39m
-                [33mtype[39m=[32m"text"[39m
-                [33mvalue[39m=[32m""[39m
-              [36m/>[39m
-            [36m</div>[39m
-            [36m<p>[39m
-              [0m❌[0m
-            [36m</p>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mGive Attempts[0m
-            [36m</h3>[39m
-            [36m<p>[39m
-              [0m3[0m
-            [36m</p>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mUse[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mGain[0m
-            [36m</button>[39m
-            [36m<div>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-label"[39m
-                [33mfor[39m=[32m"gainInputForm"[39m
-              [36m>[39m
-                [0mAttempts to add?[0m
-              [36m</label>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-control"[39m
-                [33mid[39m=[32m"gainInputForm"[39m
-                [33mtype[39m=[32m"number"[39m
-                [33mvalue[39m=[32m"0"[39m
-              [36m/>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mEdit Mode[0m
-            [36m</h3>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-switch"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"is-editing-check"[39m
-                [33mtype[39m=[32m"checkbox"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"is-editing-check"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mEdit?[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<p>[39m
-              [0mYour Name[0m
-              [0m is [0m
-              [0m[0m
-              [0m a student[0m
-            [36m</p>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mChange Color[0m
-            [36m</h3>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: red;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mchecked[39m=[32m""[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-red"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"red"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-red"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mred[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: blue;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-blue"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"blue"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-blue"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mblue[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: green;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-green"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"green"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-green"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mgreen[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: orange;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-orange"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"orange"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-orange"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0morange[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: purple;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-purple"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"purple"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-purple"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mpurple[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: cyan;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-cyan"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"cyan"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-cyan"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mcyan[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: magenta;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-magenta"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"magenta"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-magenta"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mmagenta[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: white;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-white"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"white"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-white"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mwhite[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: black;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-black"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"black"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-black"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mblack[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [0mYou have chosen[0m
-            [0m [0m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"colored-box"[39m
-              [33mstyle[39m=[32m"background-color: red;"[39m
-            [36m>[39m
-              [0mred[0m
-            [36m</span>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mMultiple Choice Question[0m
-            [36m</h3>[39m
-            [36m<div>[39m
-              [36m<select[39m
-                [33mclass[39m=[32m"form-select"[39m
-                [33mid[39m=[32m"choiceDropdown"[39m
-              [36m>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"a"[39m
-                [36m>[39m
-                  [0ma[0m
-                [36m</option>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"b"[39m
-                [36m>[39m
-                  [0mb[0m
-                [36m</option>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"c"[39m
-                [36m>[39m
-                  [0mc[0m
-                [36m</option>[39m
-              [36m</select>[39m
-            [36m</div>[39m
-            [0m❌[0m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mDouble Half[0m
-            [36m</h3>[39m
-            [36m<div>[39m
-              [0mThe current value is: [0m
-              [36m<span>[39m
-                [0m10[0m
-              [36m</span>[39m
-            [36m</div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mDouble[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mHalve[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mChoose Team[0m
-            [36m</h3>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"row"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"col"[39m
-              [36m>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mAlan Turing[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mGrace Hopper[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mAda Lovelace[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mCharles Babbage[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mBarbara Liskov[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mMargaret Hamilton[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"col"[39m
-              [36m>[39m
-                [36m<strong>[39m
-                  [0mTeam:[0m
-                [36m</strong>[39m
-                [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
-                  [33mtype[39m=[32m"button"[39m
-                [36m>[39m
-                  [0mClear Team[0m
-                [36m</button>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mColored Box[0m
-            [36m</h3>[39m
-            [36m<span>[39m
-              [0mThe current color is: [0m
-              [0mred[0m
-            [36m</span>[39m
-            [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mChange Color[0m
-              [36m</button>[39m
-              [36m<div[39m
-                [33mdata-testid[39m=[32m"colored-box"[39m
-                [33mstyle[39m=[32m"width: 50px; height: 50px; background-color: red; display: inline-block; vertical-align: bottom; margin-left: 5px;"[39m
-              [36m/>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mShove Box[0m
-            [36m</h3>[39m
-            [36m<span>[39m
-              [0mThe box is at: [0m
-              [0m10[0m
-            [36m</span>[39m
-            [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mShove the Box[0m
-              [36m</button>[39m
-              [36m<div[39m
-                [33mdata-testid[39m=[32m"moveable-box"[39m
-                [33mstyle[39m=[32m"width: 50px; height: 50px; background-color: lightblue; border: 1px solid blue; display: inline-block; vertical-align: bottom; margin-left: 10px;"[39m
-              [36m/>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<span>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mAdd One[0m
-            [36m</button>[39m
-            [0mto [0m
-            [0m0[0m
-            [0m.[0m
-          [36m</span>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mReveal Answer[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<p>[39m
-              [0m4[0m
-            [36m</p>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mStart Quiz[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mdisabled[39m=[32m""[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mStop Quiz[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mMulligan[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<p>[39m
-              [36m<span[39m
-                [33mdata-testid[39m=[32m"dice-1"[39m
-              [36m>[39m
-                [0m1[0m
-              [36m</span>[39m
-              [36m<span[39m
-                [33mdata-testid[39m=[32m"dice-2"[39m
-              [36m>[39m
-                [0m2[0m
-              [36m</span>[39m
-            [36m</p>[39m
-            [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mRoll Left[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mRoll Right[0m
-              [36m</button>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mChange Type[0m
-            [36m</button>[39m
-            [36m<p>[39m
-              [0mShort Answer[0m
-            [36m</p>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<p>[39m
-              [0mHoliday: [0m
-              [0m🛠️[0m
-            [36m</p>[39m
-            [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mAdvance by Alphabet[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mAdvance by Year[0m
-              [36m</button>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-       7 |     test("There is a header", () => {
-       8 |         render(<App />);
-    >  9 |         const header = screen.getByRole("heading");
-         |                               ^
-      10 |         expect(header).toBeInTheDocument();
-      11 |     });
-      12 |
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
-      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
-      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/HtmlCss.test.tsx:9:31)
-
-PASS src/functions.test.ts
 PASS src/form-components/CheckAnswer.test.tsx
 PASS src/form-components/EditMode.test.tsx
 PASS src/components/ChangeType.test.tsx
@@ -1168,522 +2228,10 @@ PASS src/components/Counter.test.tsx
 PASS src/components/RevealAnswer.test.tsx
 PASS src/bad-components/ColoredBox.test.tsx
 PASS src/bad-components/ShoveBox.test.tsx
-PASS src/text.test.tsx
-PASS src/App.test.tsx
------------------------------|---------|----------|---------|---------|-------------------
-File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
------------------------------|---------|----------|---------|---------|-------------------
-All files                    |     100 |    96.25 |     100 |     100 |                   
- src                         |     100 |    97.91 |     100 |     100 |                   
-  App.tsx                    |     100 |      100 |     100 |     100 |                   
-  arrays.ts                  |     100 |    94.11 |     100 |     100 | 47                
-  functions.ts               |     100 |      100 |     100 |     100 |                   
-  nested.ts                  |     100 |      100 |     100 |     100 |                   
-  objects.ts                 |     100 |      100 |     100 |     100 |                   
- src/bad-components          |     100 |       50 |     100 |     100 |                   
-  ChooseTeam.tsx             |     100 |       50 |     100 |     100 | 18                
-  ColoredBox.tsx             |     100 |      100 |     100 |     100 |                   
-  DoubleHalf.tsx             |     100 |      100 |     100 |     100 |                   
-  ShoveBox.tsx               |     100 |      100 |     100 |     100 |                   
- src/components              |     100 |    94.44 |     100 |     100 |                   
-  ChangeType.tsx             |     100 |      100 |     100 |     100 |                   
-  Counter.tsx                |     100 |      100 |     100 |     100 |                   
-  CycleHoliday.tsx           |     100 |      100 |     100 |     100 |                   
-  RevealAnswer.tsx           |     100 |      100 |     100 |     100 |                   
-  StartAttempt.tsx           |     100 |      100 |     100 |     100 |                   
-  TwoDice.tsx                |     100 |     87.5 |     100 |     100 | 35                
- src/form-components         |     100 |      100 |     100 |     100 |                   
-  ChangeColor.tsx            |     100 |      100 |     100 |     100 |                   
-  CheckAnswer.tsx            |     100 |      100 |     100 |     100 |                   
-  EditMode.tsx               |     100 |      100 |     100 |     100 |                   
-  GiveAttempts.tsx           |     100 |      100 |     100 |     100 |                   
-  MultipleChoiceQuestion.tsx |     100 |      100 |     100 |     100 |                   
- src/interfaces              |       0 |        0 |       0 |       0 |                   
-  answer.ts                  |       0 |        0 |       0 |       0 |                   
-  question.ts                |       0 |        0 |       0 |       0 |                   
------------------------------|---------|----------|---------|---------|-------------------
+FAIL src/text.test.tsx
+  ● renders the text 'Hello World' somewhere
 
-Summary of all failing tests
-FAIL src/arrays.test.ts
-  ● Testing the array functions › Testing the removeDollars function
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 3
-    + Received  + 3
-
-      Array [
-    -   1,
-    -   2,
-    -   3,
-    +   0,
-    +   0,
-    +   0,
-      ]
-
-      112 |
-      113 |     test("Testing the removeDollars function", () => {
-    > 114 |         expect(removeDollars(AMOUNTS_1)).toEqual([1, 2, 3]);
-          |                                          ^
-      115 |         expect(removeDollars(AMOUNTS_2)).toEqual([100, 200, 300, 400]);
-      116 |         expect(removeDollars(AMOUNTS_3)).toEqual([5]);
-      117 |         expect(removeDollars(AMOUNTS_4)).toEqual([0]);
-
-      at Object.<anonymous> (src/arrays.test.ts:114:42)
-
-FAIL src/objects.test.ts
-  ● Testing the object functions › Testing the renameQuestion function
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Object {
-        "body": "What is 2+2?",
-        "expected": "4",
-        "id": 1,
-        "name": "My Addition Question",
-    -   "options": Array [],
-    +   "options": Object {},
-        "points": 1,
-        "published": true,
-        "type": "short_answer_question",
-      }
-
-      145 |         expect(
-      146 |             renameQuestion(ADDITION_QUESTION, "My Addition Question")
-    > 147 |         ).toEqual({
-          |           ^
-      148 |             id: 1,
-      149 |             name: "My Addition Question",
-      150 |             body: "What is 2+2?",
-
-      at Object.<anonymous> (src/objects.test.ts:147:11)
-
-FAIL src/components/TwoDice.test.tsx
-  ● TwoDice Component tests › There is a `left-die` and `right-die` testid
-
-    TestingLibraryElementError: Unable to find an element by: [data-testid="left-die"]
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<p>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-1"[39m
-            [36m>[39m
-              [0m1[0m
-            [36m</span>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-2"[39m
-            [36m>[39m
-              [0m2[0m
-            [36m</span>[39m
-          [36m</p>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Left[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Right[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      24 |     });
-      25 |     test("There is a `left-die` and `right-die` testid", () => {
-    > 26 |         const leftDie = screen.getByTestId("left-die");
-         |                                ^
-      27 |         const rightDie = screen.getByTestId("right-die");
-      28 |         expect(leftDie).toBeInTheDocument();
-      29 |         expect(rightDie).toBeInTheDocument();
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/components/TwoDice.test.tsx:26:32)
-
-  ● TwoDice Component tests › The `left-die` and `right-die` are two different numbers
-
-    TestingLibraryElementError: Unable to find an element by: [data-testid="left-die"]
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<p>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-1"[39m
-            [36m>[39m
-              [0m1[0m
-            [36m</span>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-2"[39m
-            [36m>[39m
-              [0m2[0m
-            [36m</span>[39m
-          [36m</p>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Left[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Right[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      30 |     });
-      31 |     test("The `left-die` and `right-die` are two different numbers", () => {
-    > 32 |         const leftDie = screen.getByTestId("left-die");
-         |                                ^
-      33 |         const rightDie = screen.getByTestId("right-die");
-      34 |         const leftNumber = extractDigits(leftDie);
-      35 |         const rightNumber = extractDigits(rightDie);
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/components/TwoDice.test.tsx:32:32)
-
-  ● TwoDice Component tests › Clicking left button changes first number
-
-    TestingLibraryElementError: Unable to find an element by: [data-testid="left-die"]
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<p>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-1"[39m
-            [36m>[39m
-              [0m5[0m
-            [36m</span>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-2"[39m
-            [36m>[39m
-              [0m2[0m
-            [36m</span>[39m
-          [36m</p>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Left[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Right[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      54 |         expect(mathRandomFunction).toBeCalledTimes(3);
-      55 |         // And the number to be 5
-    > 56 |         const leftNumber = extractDigits(screen.getByTestId("left-die"));
-         |                                                 ^
-      57 |         expect(leftNumber).toEqual(5);
-      58 |     });
-      59 |     // Clicking right button changes second number
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/components/TwoDice.test.tsx:56:49)
-
-  ● TwoDice Component tests › Clicking right button changes second number
-
-    TestingLibraryElementError: Unable to find an element by: [data-testid="right-die"]
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<p>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-1"[39m
-            [36m>[39m
-              [0m1[0m
-            [36m</span>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-2"[39m
-            [36m>[39m
-              [0m5[0m
-            [36m</span>[39m
-          [36m</p>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Left[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Right[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      66 |         expect(mathRandomFunction).toBeCalledTimes(3);
-      67 |         // And the number to be 5
-    > 68 |         const rightNumber = extractDigits(screen.getByTestId("right-die"));
-         |                                                  ^
-      69 |         expect(rightNumber).toEqual(5);
-      70 |     });
-      71 |     // Rolling two different numbers does not win or lose the game
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/components/TwoDice.test.tsx:68:50)
-
-  ● TwoDice Component tests › Rolling two different numbers does not win or lose the game
-
-    TestingLibraryElementError: Unable to find an element by: [data-testid="left-die"]
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<p>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-1"[39m
-            [36m>[39m
-              [0m1[0m
-            [36m</span>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-2"[39m
-            [36m>[39m
-              [0m2[0m
-            [36m</span>[39m
-          [36m</p>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Left[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Right[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      74 |         const leftButton = screen.getByRole("button", { name: /Roll Left/i });
-      75 |         const rightButton = screen.getByRole("button", { name: /Roll Right/i });
-    > 76 |         const leftDie = screen.getByTestId("left-die");
-         |                                ^
-      77 |         const rightDie = screen.getByTestId("right-die");
-      78 |         // When the left and right buttons are rolled once each
-      79 |         leftButton.click();
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/components/TwoDice.test.tsx:76:32)
-
-  ● TwoDice Component tests › Getting snake eyes loses the game
-
-    TestingLibraryElementError: Unable to find an element by: [data-testid="left-die"]
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<p>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-1"[39m
-            [36m>[39m
-              [0m1[0m
-            [36m</span>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-2"[39m
-            [36m>[39m
-              [0m2[0m
-            [36m</span>[39m
-          [36m</p>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Left[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Right[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-       95 |         const leftButton = screen.getByRole("button", { name: /Roll Left/i });
-       96 |         const rightButton = screen.getByRole("button", { name: /Roll Right/i });
-    >  97 |         const leftDie = screen.getByTestId("left-die");
-          |                                ^
-       98 |         const rightDie = screen.getByTestId("right-die");
-       99 |         // When the left and right buttons are rolled once each
-      100 |         leftButton.click();
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/components/TwoDice.test.tsx:97:32)
-
-  ● TwoDice Component tests › Getting matching numbers wins the game
-
-    TestingLibraryElementError: Unable to find an element by: [data-testid="left-die"]
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<p>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-1"[39m
-            [36m>[39m
-              [0m1[0m
-            [36m</span>[39m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"dice-2"[39m
-            [36m>[39m
-              [0m2[0m
-            [36m</span>[39m
-          [36m</p>[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Left[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mRoll Right[0m
-            [36m</button>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      119 |         const leftButton = screen.getByRole("button", { name: /Roll Left/i });
-      120 |         const rightButton = screen.getByRole("button", { name: /Roll Right/i });
-    > 121 |         const leftDie = screen.getByTestId("left-die");
-          |                                ^
-      122 |         const rightDie = screen.getByTestId("right-die");
-      123 |         // When the left and right buttons are rolled once each
-      124 |         leftButton.click();
-
-      at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
-      at node_modules/@testing-library/dom/dist/query-helpers.js:62:17
-      at getByTestId (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/components/TwoDice.test.tsx:121:32)
-
-FAIL src/HtmlCss.test.tsx
-  ● Some HTML Elements are added. › There is a header
-
-    TestingLibraryElementError: Found multiple elements with the role "heading"
-
-    Here are the matching elements:
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h1>[39m
-      [0mThis is a header[0m
-    [36m</h1>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mCheck Answer[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mGive Attempts[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mEdit Mode[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mChange Color[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mMultiple Choice Question[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mDouble Half[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mChoose Team[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mColored Box[0m
-    [36m</h3>[39m
-
-    Ignored nodes: comments, <script />, <style />
-    [36m<h3>[39m
-      [0mShove Box[0m
-    [36m</h3>[39m
-
-    (If this is intentional, then use the `*AllBy*` variant of the query (like `queryAllByText`, `getAllByText`, or `findAllByText`)).
+    TestingLibraryElementError: Unable to find an element with the text: /Hello World/. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
 
     Ignored nodes: comments, <script />, <style />
     [36m<body>[39m
@@ -1695,665 +2243,262 @@ FAIL src/HtmlCss.test.tsx
             [33mclass[39m=[32m"App-header"[39m
           [36m>[39m
             [0mAdam Liu UD CISC275 with React Hooks and TypeScript[0m
+            [36m<button[39m
+              [33mclass[39m=[32m"btn btn-primary"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mQuizzer[0m
+            [36m</button>[39m
           [36m</header>[39m
-          [36m<h1>[39m
-            [0mThis is a header[0m
-          [36m</h1>[39m
-          [36m<p>[39m
-            [0mHello World[0m
-          [36m</p>[39m
-          [36m<img[39m
-            [33malt[39m=[32m"This is an image of doraemon"[39m
-            [33msrc[39m=[32m"../assets/images/doraemon1.jpg"[39m
-          [36m/>[39m
-          [36m<ol>[39m
-            [36m<li>[39m
-              [0mThing 1[0m
-            [36m</li>[39m
-            [36m<li>[39m
-              [0mThing 2[0m
-            [36m</li>[39m
-            [36m<li>[39m
-              [0mThing 3[0m
-            [36m</li>[39m
-          [36m</ol>[39m
-          [36m<button[39m
-            [33mclass[39m=[32m"btn btn-primary"[39m
-            [33mtype[39m=[32m"button"[39m
+          [36m<div[39m
+            [33mstyle[39m=[32m"display: block;"[39m
           [36m>[39m
-            [0mLog Hello World[0m
-          [36m</button>[39m
-          [36m<p>[39m
-            [0mEdit [0m
-            [36m<code>[39m
-              [0msrc/App.tsx[0m
-            [36m</code>[39m
-            [0m and save. This page will automatically reload.[0m
-          [36m</p>[39m
-          [36m<div>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"container"[39m
+              [33mclass[39m=[32m"quizzer"[39m
             [36m>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"row"[39m
+                [33mclass[39m=[32m"quiz_list"[39m
               [36m>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"col"[39m
+                  [33mclass[39m=[32m"quiz_view_card"[39m
                 [36m>[39m
-                  [0mFirst Column[0m
                   [36m<div[39m
-                    [33mstyle[39m=[32m"width: 50px; height: 30px; background-color: red;"[39m
-                  [36m/>[39m
+                    [33mclass[39m=[32m"d-flex align-items-baseline"[39m
+                  [36m>[39m
+                    [36m<h3[39m
+                      [33mclass[39m=[32m"title"[39m
+                    [36m>[39m
+                      [0mBlank_Questions[0m
+                    [36m</h3>[39m
+                    [36m<p>[39m
+                      [0m3[0m
+                      [0m question[0m
+                      [0ms[0m
+                    [36m</p>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mThis quiz is full of blank questions and is not published[0m
+                  [36m</p>[39m
                 [36m</div>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"col"[39m
+                  [33mclass[39m=[32m"quiz_view_card"[39m
                 [36m>[39m
-                  [0mSecond Column[0m
                   [36m<div[39m
-                    [33mstyle[39m=[32m"width: 50px; height: 30px; background-color: red;"[39m
-                  [36m/>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mCheck Answer[0m
-            [36m</h3>[39m
-            [36m<div>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-label"[39m
-                [33mfor[39m=[32m"formCheckAnswer"[39m
-              [36m>[39m
-                [0mWhat is the Answer? (Hint: 42)[0m
-              [36m</label>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-control"[39m
-                [33mid[39m=[32m"formCheckAnswer"[39m
-                [33mtype[39m=[32m"text"[39m
-                [33mvalue[39m=[32m""[39m
-              [36m/>[39m
-            [36m</div>[39m
-            [36m<p>[39m
-              [0m❌[0m
-            [36m</p>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mGive Attempts[0m
-            [36m</h3>[39m
-            [36m<p>[39m
-              [0m3[0m
-            [36m</p>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mUse[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mGain[0m
-            [36m</button>[39m
-            [36m<div>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-label"[39m
-                [33mfor[39m=[32m"gainInputForm"[39m
-              [36m>[39m
-                [0mAttempts to add?[0m
-              [36m</label>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-control"[39m
-                [33mid[39m=[32m"gainInputForm"[39m
-                [33mtype[39m=[32m"number"[39m
-                [33mvalue[39m=[32m"0"[39m
-              [36m/>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mEdit Mode[0m
-            [36m</h3>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-switch"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"is-editing-check"[39m
-                [33mtype[39m=[32m"checkbox"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"is-editing-check"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mEdit?[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<p>[39m
-              [0mYour Name[0m
-              [0m is [0m
-              [0m[0m
-              [0m a student[0m
-            [36m</p>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mChange Color[0m
-            [36m</h3>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: red;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mchecked[39m=[32m""[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-red"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"red"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-red"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mred[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: blue;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-blue"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"blue"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-blue"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mblue[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: green;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-green"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"green"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-green"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mgreen[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: orange;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-orange"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"orange"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-orange"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0morange[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: purple;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-purple"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"purple"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-purple"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mpurple[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: cyan;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-cyan"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"cyan"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-cyan"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mcyan[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: magenta;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-magenta"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"magenta"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-magenta"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mmagenta[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: white;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-white"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"white"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-white"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mwhite[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"form-check form-check-inline"[39m
-              [33mstyle[39m=[32m"background-color: black;"[39m
-            [36m>[39m
-              [36m<input[39m
-                [33mclass[39m=[32m"form-check-input"[39m
-                [33mid[39m=[32m"response-black"[39m
-                [33mname[39m=[32m"response"[39m
-                [33mtype[39m=[32m"radio"[39m
-                [33mvalue[39m=[32m"black"[39m
-              [36m/>[39m
-              [36m<label[39m
-                [33mclass[39m=[32m"form-check-label"[39m
-                [33mfor[39m=[32m"response-black"[39m
-                [33mtitle[39m=[32m""[39m
-              [36m>[39m
-                [0mblack[0m
-              [36m</label>[39m
-            [36m</div>[39m
-            [0mYou have chosen[0m
-            [0m [0m
-            [36m<span[39m
-              [33mdata-testid[39m=[32m"colored-box"[39m
-              [33mstyle[39m=[32m"background-color: red;"[39m
-            [36m>[39m
-              [0mred[0m
-            [36m</span>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mMultiple Choice Question[0m
-            [36m</h3>[39m
-            [36m<div>[39m
-              [36m<select[39m
-                [33mclass[39m=[32m"form-select"[39m
-                [33mid[39m=[32m"choiceDropdown"[39m
-              [36m>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"a"[39m
-                [36m>[39m
-                  [0ma[0m
-                [36m</option>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"b"[39m
-                [36m>[39m
-                  [0mb[0m
-                [36m</option>[39m
-                [36m<option[39m
-                  [33mvalue[39m=[32m"c"[39m
-                [36m>[39m
-                  [0mc[0m
-                [36m</option>[39m
-              [36m</select>[39m
-            [36m</div>[39m
-            [0m❌[0m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mDouble Half[0m
-            [36m</h3>[39m
-            [36m<div>[39m
-              [0mThe current value is: [0m
-              [36m<span>[39m
-                [0m10[0m
-              [36m</span>[39m
-            [36m</div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mDouble[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mHalve[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mChoose Team[0m
-            [36m</h3>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"row"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"col"[39m
-              [36m>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
+                    [33mclass[39m=[32m"d-flex align-items-baseline"[39m
                   [36m>[39m
-                    [0mAlan Turing[0m
-                  [36m</button>[39m
+                    [36m<h3[39m
+                      [33mclass[39m=[32m"title"[39m
+                    [36m>[39m
+                      [0mSimple_Questions[0m
+                    [36m</h3>[39m
+                    [36m<p>[39m
+                      [0m2[0m
+                      [0m question[0m
+                      [0ms[0m
+                    [36m</p>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mThis quiz is full of simple questions and is published[0m
+                  [36m</p>[39m
                 [36m</div>[39m
                 [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
+                  [33mclass[39m=[32m"quiz_view_card"[39m
                 [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"d-flex align-items-baseline"[39m
                   [36m>[39m
-                    [0mGrace Hopper[0m
-                  [36m</button>[39m
+                    [36m<h3[39m
+                      [33mclass[39m=[32m"title"[39m
+                    [36m>[39m
+                      [0mTrivia_Questions[0m
+                    [36m</h3>[39m
+                    [36m<p>[39m
+                      [0m0[0m
+                      [0m question[0m
+                      [0ms[0m
+                    [36m</p>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mThis quiz is full of trivia questions and is published[0m
+                  [36m</p>[39m
                 [36m</div>[39m
                 [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
+                  [33mclass[39m=[32m"quiz_view_card"[39m
                 [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"d-flex align-items-baseline"[39m
                   [36m>[39m
-                    [0mAda Lovelace[0m
-                  [36m</button>[39m
+                    [36m<h3[39m
+                      [33mclass[39m=[32m"title"[39m
+                    [36m>[39m
+                      [0mEmpty_Questions[0m
+                    [36m</h3>[39m
+                    [36m<p>[39m
+                      [0m4[0m
+                      [0m question[0m
+                      [0ms[0m
+                    [36m</p>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mThis quiz is full of empty questions and is published[0m
+                  [36m</p>[39m
                 [36m</div>[39m
                 [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
+                  [33mclass[39m=[32m"quiz_view_card"[39m
                 [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"d-flex align-items-baseline"[39m
                   [36m>[39m
-                    [0mCharles Babbage[0m
-                  [36m</button>[39m
+                    [36m<h3[39m
+                      [33mclass[39m=[32m"title"[39m
+                    [36m>[39m
+                      [0mSimple_Questions2[0m
+                    [36m</h3>[39m
+                    [36m<p>[39m
+                      [0m5[0m
+                      [0m question[0m
+                      [0ms[0m
+                    [36m</p>[39m
+                  [36m</div>[39m
+                  [36m<p>[39m
+                    [0mThis quiz is the second full of simple questions and is published[0m
+                  [36m</p>[39m
                 [36m</div>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mBarbara Liskov[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-                [36m<div[39m
-                  [33mstyle[39m=[32m"margin-bottom: 4px;"[39m
-                [36m>[39m
-                  [0mAdd[0m
-                  [0m [0m
-                  [36m<button[39m
-                    [33mclass[39m=[32m"btn btn-primary btn-sm"[39m
-                    [33mtype[39m=[32m"button"[39m
-                  [36m>[39m
-                    [0mMargaret Hamilton[0m
-                  [36m</button>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"col"[39m
-              [36m>[39m
-                [36m<strong>[39m
-                  [0mTeam:[0m
-                [36m</strong>[39m
                 [36m<button[39m
-                  [33mclass[39m=[32m"btn btn-primary"[39m
+                  [33mclass[39m=[32m"add_btn btn btn-primary"[39m
                   [33mtype[39m=[32m"button"[39m
                 [36m>[39m
-                  [0mClear Team[0m
+                  [0mAdd New Quiz[0m
                 [36m</button>[39m
+              [36m</div>[39m
+              [36m<div />[39m
+              [36m<hr />[39m
+              [36m<h2[39m
+                [33mstyle[39m=[32m"color: white;"[39m
+              [36m>[39m
+                [0mApplication Sketch[0m
+              [36m</h2>[39m
+              [36m<img[39m
+                [33msrc[39m=[32m"task11sketch.png"[39m
+              [36m/>[39m
+              [36m<hr />[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"color: white;"[39m
+              [36m>[39m
+                [36m<h2>[39m
+                  [0mCompleted Features[0m
+                [36m</h2>[39m
+                [36m<ul[39m
+                  [33mclass[39m=[32m"completedList"[39m
+                [36m>[39m
+                  [36m<li>[39m
+                    [0mUsers can see a list of quizzes, including the quizzes title, description, and how many questions it has[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can select a specific quiz to see the questions, including the questions name, body, and points[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mQuiz questions can be of AT LEAST two types: a short answer question or multiple choice question[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can enter or choose an answer for a quiz question, and be told if they are correct[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can see how many total points they have earned[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can clear out their existing answers for a quiz[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can publish or unpublish a question[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can filter the questions in a list so that only published questions are shown[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can edit the questions and fields of a quiz[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can add a new quiz question[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can delete an existing quiz question[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can reorder quiz questions[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can add a new quiz[0m
+                  [36m</li>[39m
+                  [36m<li>[39m
+                    [0mUsers can delete an existing quiz[0m
+                  [36m</li>[39m
+                [36m</ul>[39m
               [36m</div>[39m
             [36m</div>[39m
           [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mColored Box[0m
-            [36m</h3>[39m
-            [36m<span>[39m
-              [0mThe current color is: [0m
-              [0mred[0m
-            [36m</span>[39m
-            [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mChange Color[0m
-              [36m</button>[39m
-              [36m<div[39m
-                [33mdata-testid[39m=[32m"colored-box"[39m
-                [33mstyle[39m=[32m"width: 50px; height: 50px; background-color: red; display: inline-block; vertical-align: bottom; margin-left: 5px;"[39m
-              [36m/>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<h3>[39m
-              [0mShove Box[0m
-            [36m</h3>[39m
-            [36m<span>[39m
-              [0mThe box is at: [0m
-              [0m10[0m
-            [36m</span>[39m
-            [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mShove the Box[0m
-              [36m</button>[39m
-              [36m<div[39m
-                [33mdata-testid[39m=[32m"moveable-box"[39m
-                [33mstyle[39m=[32m"width: 50px; height: 50px; background-color: lightblue; border: 1px solid blue; display: inline-block; vertical-align: bottom; margin-left: 10px;"[39m
-              [36m/>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<span>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mAdd One[0m
-            [36m</button>[39m
-            [0mto [0m
-            [0m0[0m
-            [0m.[0m
-          [36m</span>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mReveal Answer[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<p>[39m
-              [0m4[0m
-            [36m</p>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mStart Quiz[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mdisabled[39m=[32m""[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mStop Quiz[0m
-            [36m</button>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mMulligan[0m
-            [36m</button>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<p>[39m
-              [36m<span[39m
-                [33mdata-testid[39m=[32m"dice-1"[39m
-              [36m>[39m
-                [0m1[0m
-              [36m</span>[39m
-              [36m<span[39m
-                [33mdata-testid[39m=[32m"dice-2"[39m
-              [36m>[39m
-                [0m2[0m
-              [36m</span>[39m
-            [36m</p>[39m
-            [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mRoll Left[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mRoll Right[0m
-              [36m</button>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<button[39m
-              [33mclass[39m=[32m"btn btn-primary"[39m
-              [33mtype[39m=[32m"button"[39m
-            [36m>[39m
-              [0mChange Type[0m
-            [36m</button>[39m
-            [36m<p>[39m
-              [0mShort Answer[0m
-            [36m</p>[39m
-          [36m</div>[39m
-          [36m<hr />[39m
-          [36m<div>[39m
-            [36m<p>[39m
-              [0mHoliday: [0m
-              [0m��️[0m
-            [36m</p>[39m
-            [36m<div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mAdvance by Alphabet[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"btn btn-primary"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mAdvance by Year[0m
-              [36m</button>[39m
-            [36m</div>[39m
-          [36m</div>[39m
+          [36m<div />[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
 
-       7 |     test("There is a header", () => {
-       8 |         render(<App />);
-    >  9 |         const header = screen.getByRole("heading");
-         |                               ^
-      10 |         expect(header).toBeInTheDocument();
-      11 |     });
-      12 |
+       5 | test("renders the text 'Hello World' somewhere", () => {
+       6 |     render(<App />);
+    >  7 |     const texts = screen.getAllByText(/Hello World/);
+         |                          ^
+       8 |     expect(texts.length).toBeGreaterThanOrEqual(1);
+       9 | });
+      10 |
 
       at Object.getElementError (node_modules/@testing-library/dom/dist/config.js:38:19)
-      at getElementError (node_modules/@testing-library/dom/dist/query-helpers.js:25:35)
-      at getMultipleElementsFoundError (node_modules/@testing-library/dom/dist/query-helpers.js:29:10)
-      at node_modules/@testing-library/dom/dist/query-helpers.js:66:13
-      at getByRole (node_modules/@testing-library/dom/dist/query-helpers.js:111:19)
-      at Object.<anonymous> (src/HtmlCss.test.tsx:9:31)
+      at node_modules/@testing-library/dom/dist/query-helpers.js:90:38
+      at getAllByText (node_modules/@testing-library/dom/dist/query-helpers.js:130:15)
+      at Object.<anonymous> (src/text.test.tsx:7:26)
 
+PASS src/App.test.tsx
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
+File                         | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
+All files                    |   82.82 |    72.44 |      80 |   83.26 |                                         
+ src                         |      75 |       50 |   66.66 |      75 |                                         
+  App.tsx                    |   66.66 |       50 |      50 |   66.66 | 16                                      
+  ShowHideTasks.tsx          |     100 |       50 |     100 |     100 | 21                                      
+ src/bad-components          |     100 |       50 |     100 |     100 |                                         
+  ChooseTeam.tsx             |     100 |       50 |     100 |     100 | 18                                      
+  ColoredBox.tsx             |     100 |      100 |     100 |     100 |                                         
+  DoubleHalf.tsx             |     100 |      100 |     100 |     100 |                                         
+  ShoveBox.tsx               |     100 |      100 |     100 |     100 |                                         
+ src/components              |     100 |    94.44 |     100 |     100 |                                         
+  ChangeType.tsx             |     100 |      100 |     100 |     100 |                                         
+  Counter.tsx                |     100 |      100 |     100 |     100 |                                         
+  CycleHoliday.tsx           |     100 |      100 |     100 |     100 |                                         
+  RevealAnswer.tsx           |     100 |      100 |     100 |     100 |                                         
+  StartAttempt.tsx           |     100 |      100 |     100 |     100 |                                         
+  TwoDice.tsx                |     100 |     87.5 |     100 |     100 | 35                                      
+ src/form-components         |     100 |      100 |     100 |     100 |                                         
+  ChangeColor.tsx            |     100 |      100 |     100 |     100 |                                         
+  CheckAnswer.tsx            |     100 |      100 |     100 |     100 |                                         
+  EditMode.tsx               |     100 |      100 |     100 |     100 |                                         
+  GiveAttempts.tsx           |     100 |      100 |     100 |     100 |                                         
+  MultipleChoiceQuestion.tsx |     100 |      100 |     100 |     100 |                                         
+ src/interfaces              |       0 |        0 |       0 |       0 |                                         
+  answer.ts                  |       0 |        0 |       0 |       0 |                                         
+  question.ts                |       0 |        0 |       0 |       0 |                                         
+  quiz.ts                    |       0 |        0 |       0 |       0 |                                         
+ src/quizzer                 |   71.24 |    63.33 |   64.38 |   72.41 |                                         
+  AddQuizModal.tsx           |   66.66 |      100 |      40 |   66.66 | 37-56                                   
+  QuestionEdit.tsx           |   51.35 |    55.55 |   35.29 |   51.42 | 27-30,55,64,74-76,84-86,108-171,205-247 
+  QuizCard.tsx               |     100 |       80 |     100 |     100 | 32                                      
+  QuizEdit.tsx               |   66.66 |    33.33 |   66.66 |      72 | 48-54,72-101                            
+  QuizExpanded.tsx           |   73.07 |    71.42 |   58.33 |      76 | 31-33,42,58-62                          
+  QuizList.tsx               |     100 |      100 |     100 |     100 |                                         
+  QuizQuestion.tsx           |      50 |       50 |      50 |      50 | 24-25,30-32                             
+  QuizView.tsx               |     100 |      100 |     100 |     100 |                                         
+  Quizzer.tsx                |     100 |      100 |     100 |     100 |                                         
+-----------------------------|---------|----------|---------|---------|-----------------------------------------
 
-Test Suites: 4 failed, 18 passed, 22 total
-Tests:       10 failed, 132 passed, 142 total
+Test Suites: 3 failed, 15 passed, 18 total
+Tests:       16 failed, 93 passed, 109 total
 Snapshots:   0 total
-Time:        13.258 s
+Time:        14.438 s
 Ran all test suites.
