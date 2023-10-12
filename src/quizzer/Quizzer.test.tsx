@@ -169,8 +169,7 @@ describe("Quizzer Tests", () => {
         expect(screen.queryByText("Simple_Questions")).not.toBeInTheDocument();
     });
 
-    test("Users can delete an existing quiz question", () => {
-    });
+    test("Users can delete an existing quiz question", () => { });
 
     test("Users can add a new quiz question", () => {
         const text = screen.getByText("Simple_Questions");
@@ -198,8 +197,7 @@ describe("Quizzer Tests", () => {
         ).toBeInTheDocument();
     });
 
-    test("Users can edit the questions and fields of a quiz", () => {
-    });
+    test("Users can edit the questions and fields of a quiz", () => { });
 
     test("Users can reorder quiz questions", () => {
         const text = screen.getByText("Simple_Questions");
